@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/main_view"
+                tools:context="leonproject.com.MemoColor.MainActivity">
+    <ImageView
+        android:id="@+id/image_display"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:fastScrollEnabled="false"
+        android:padding="2dp"
+        android:smoothScrollbar="true"
+        android:layout_alignParentTop="true"
+        android:gravity="fill_vertical"
+        android:longClickable="true">
+    </GridView>
+
+
+</RelativeLayout>
